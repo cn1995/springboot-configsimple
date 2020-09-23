@@ -1,0 +1,18 @@
+package com.example.demo;
+
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class config1 {
+
+
+    @Bean(name = "comBean1")
+    @ConfigurationProperties(prefix = "ci.i1")
+    public compBean compBean() {
+        return new compBean();
+    }
+
+}
